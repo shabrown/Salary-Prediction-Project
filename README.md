@@ -71,7 +71,7 @@ As we can see that the job type variable is eventually distributed across the da
 
 Janitor has the lowest median salary while CEO has the highest. 
 
-![](https://imgur.com/Ke07Z4r)
+![](https://i.imgur.com/Ke07Z4r.png)
 
 Degree:
 
@@ -79,7 +79,7 @@ About half of the peope in the dataset has either a high school diploma or no de
 
 Not surprising, people has no degree has the lowest median salary.
 
-![](https://imgur.com/9B0y1TA)
+![](https://i.imgur.com/9B0y1TA.png)
 
 Major:
 
@@ -87,7 +87,7 @@ More than half of the people in the dataset has no major. The rest of the majors
 
 People has no major has the lowest median salary while engineering major has the highest salary.
 
-![](https://imgur.com/LfasZvS)
+![](https://i.imgur.com/LfasZvS.png)
 
 Industry:
 
@@ -95,19 +95,19 @@ All industires are eventlly distributed.
 
 Education has the lowest median salary while oil has the highest median salary.
 
-![](https://imgur.com/jq6152X)
+![](https://i.imgur.com/jq6152X.png)
 
 Years of experience:
 
 Years of experience is positively correlated with salary.
 
-![](https://imgur.com/PoelEn4)
+![](https://i.imgur.com/PoelEn4.png)
 
 Miles from metropolis:
 
 Miles from metropolis is negatively correlated with salary.
 
-![](https://imgur.com/lgwIsFD)
+![](https://i.imgur.com/lgwIsFD.png)
 
 
 ## 5. Model development
@@ -141,7 +141,7 @@ Correalation Matrix:
 
 After we applied mean encoding to the categorical variables. We see a correlation matrix as follows:
 
-![](https://imgur.com/jXhSSZo)
+![](https://i.imgur.com/jXhSSZo.png)
 
 
 ## 5. Develop Model
@@ -157,7 +157,7 @@ Correalation Matrix:
 
 After we applied mean encoding to the categorical variables. We see a correlation matrix as follows:
 
-![](https://imgur.com/jXhSSZo)
+![](https://i.imgur.com/jXhSSZo.png)
 
 
 ### Best model selection
