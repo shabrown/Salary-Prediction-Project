@@ -51,9 +51,6 @@ def user_input_features():
 df = user_input_features()
 
 
-# In[45]:
-
-
 encode_dict = {'job_type': {'CEO': 145.31143310519482,
                             'CFO': 135.45854674396352,
                             'CTO': 135.47998336612127,
@@ -85,24 +82,22 @@ encode_dict = {'job_type': {'CEO': 145.31143310519482,
                              'WEB': 121.64451908439591}}
 
 
-
-encode_cols = ['job_type', 'degree', 'major', 'industry']
-
-for col in encode_cols:
-    df[col] = df[col].map(encode_dict[col])
-
 # Displays the user input features
 st.subheader('User Input features')
-
 
 st.write(df)
 
 # Reads in saved classification model
 model = pickle.load(open('salary_prediction.pkl', 'rb'))
 
+encode_cols = ['job_type', 'degree', 'major', 'industry']
+
+for col in encode_cols:
+    df[col] = df[col].map(encode_dict[col])
+
 # Apply model to make predictions
 prediction = model.predict(df)
 
 st.subheader('Predicted Salary')
-st.write(prediction)
+st.write(f'{round(prediction[0],2)}k')
 
