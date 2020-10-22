@@ -1,5 +1,15 @@
 # Salary Prediction Project
 
+The deploy web app is live at: https://predicted-salary.herokuapp.com/
+
+## The web app was built in Python using the following libraries:
+
+streamlit
+pandas
+numpy
+scikit-learn
+pickle
+
 ## Problem Statement
 
 The most important asset in any company is is the people—the human capita. It’s important to find great talent, and more importantly to keep the great talent happy and loyal to the company.
