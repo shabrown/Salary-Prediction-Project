@@ -2,13 +2,16 @@
 
 The deploy web app is live at: https://predicted-salary.herokuapp.com/
 
-## The web app was built in Python using the following libraries:
 
-streamlit
-pandas
-numpy
-scikit-learn
-pickle
+
+#### The web app was built in Python using the following libraries:
+
+
+streamlit    
+pandas    
+numpy    
+scikit-learn    
+pickle    
 
 ## Problem Statement
 
