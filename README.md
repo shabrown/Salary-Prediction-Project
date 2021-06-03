@@ -1,23 +1,23 @@
 # Salary Prediction Project
 
-The deploy web app is live at: https://predicted-salary.herokuapp.com/
+The deployed web app is live at: https://predicted-salary.herokuapp.com/
 
 
 
 #### The web app was built in Python using the following libraries:
 
 
-streamlit    
-pandas    
-numpy    
-scikit-learn    
-pickle    
+streamlit    
+pandas    
+numpy    
+scikit-learn    
+pickle    
 
 ## Problem Statement
 
-The most important asset in any company is is the people—the human capita. It’s important to find great talent, and more importantly to keep the great talent happy and loyal to the company.
+The most important asset in any company is the people — the human capital. It’s important to find great talent, and more importantly to keep the great talent happy and loyal to the company.
 
-Salary, without a doubt is a great factor in attracting great people and keep people happy in the organization.
+Salary, without a doubt, is a great factor in attracting great people and keep people happy in the organization.
 
 In this project, we want to find out:
 
@@ -32,11 +32,11 @@ How accurate can we get?
 ## 1. Introduction
 
 
-### The dataset, features and target value
+### The dataset, features, and target value
 
 There are a million entries in the dataset.
 
-The decription for the variables are as follows:
+The description for the variables are as follows:
 
 * **jobId:** The ID of the job.
 * **companyId:** The ID of the company.
@@ -57,9 +57,9 @@ The target variable is the salary each employee receives, being the columns the 
 
 There are no duplicated entries or missing values in the dataset.
 
-There are, however, some outliers in our target variable. Upon evaluation, we noticed that the outliers in the upper boundary are from high paying industries e.g. oil and fianance, so we will keep these values.
+There are, however, some outliers in our target variable. Upon evaluation, we noticed that the outliers in the upper boundary are from high-paying industries e.g. oil and finance, so we will keep these values.
 
-There are also salaries with value of 0. We decided to remove these outliers off the dataset.
+There are also salaries with a value of 0. We decided to remove these outliers from the dataset.
 
 
 ## 3. Descriptive statistics
@@ -82,29 +82,29 @@ Job type:
 
 As we can see that the job type variable is eventually distributed across the dataset. 
 
-Janitor has the lowest median salary while CEO has the highest. 
+The job type "janitor" has the lowest median salary while CEO has the highest. 
 
 ![](https://i.imgur.com/Ke07Z4r.png)
 
 Degree:
 
-About half of the peope in the dataset has either a high school diploma or no degree. Bachelor, master and doctoral degrees are eventually distributed. 
+About half of the people in the dataset have either a high school diploma or no degree. Bachelor, master, and doctoral degrees are eventually distributed. 
 
-Not surprising, people has no degree has the lowest median salary.
+Not surprisingly, people with no degree have the lowest median salary.
 
 ![](https://i.imgur.com/9B0y1TA.png)
 
 Major:
 
-More than half of the people in the dataset has no major. The rest of the majors are eventually distributed.
+More than half of the people in the dataset have no major. The rest of the majors are eventually distributed.
 
-People has no major has the lowest median salary while engineering major has the highest salary.
+People with no major have the lowest median salary while engineering major has the highest salary.
 
 ![](https://i.imgur.com/LfasZvS.png)
 
 Industry:
 
-All industires are eventlly distributed.
+All industries are eventually distributed.
 
 Education has the lowest median salary while oil has the highest median salary.
 
@@ -112,13 +112,13 @@ Education has the lowest median salary while oil has the highest median salary.
 
 Years of experience:
 
-Years of experience is positively correlated with salary.
+Years of experience are positively correlated with salary.
 
 ![](https://i.imgur.com/PoelEn4.png)
 
 Miles from metropolis:
 
-Miles from metropolis is negatively correlated with salary.
+Miles from a metropolis is negatively correlated with salary.
 
 ![](https://i.imgur.com/lgwIsFD.png)
 
@@ -127,30 +127,30 @@ Miles from metropolis is negatively correlated with salary.
 
 ### Baseline
 
-We encode our categorical variables with label encoder and deployed a simple linear regression model.
+We encode our categorical variables with a label encoder and deployed a simple linear regression model.
 
 The MSE for the baseline model is: 925.31
 
 
 ### Hypothesize solution 
 
-The baseline model doesn't really do a decent job of predicting salary. There are still a lot of room to improve the performance:
+The baseline model doesn't really do a decent job of predicting salary. There is still a lot of room to improve the performance:
 
-The larger the variance in the variables, the strong impact it does for the model. So we can scale all the numerical variables in the dataset.
+The larger the variance in the variables, the strong impact it does on the model. So we can scale all the numerical variables in the dataset.
 
-We will test the model by using Random Tree model.
+We will test the model by using the Random Forest model.
 
 Gradient Boosting Regressor is very robust as well.
 
-It also makes sense that people who have similar background may have similar salary. So we will also test KNearest Neighbor.
+It also makes sense that people who have similar backgrounds may have similar salaries. So we will also test KNearest Neighbor.
 
-### Feature engeenering
+### Feature engineering
 
-During the explorary data analysis, we noticed that there is an order to the median salaries of the categorical variables. 
+During the exploratory data analysis, we noticed that there is an order to the median salaries of the categorical variables. 
 
-Because of that, we are going to to code with the categorical variables with their mean salaries.
+Because of that, we are going to code with the categorical variables with their mean salaries.
 
-Correalation Matrix:
+Correlation Matrix:
 
 After we applied mean encoding to the categorical variables. We see a correlation matrix as follows:
 
@@ -160,13 +160,13 @@ After we applied mean encoding to the categorical variables. We see a correlatio
 ## 5. Develop Model
 
 
-### Feature engeenering
+### Feature engineering
 
-During the explorary data analysis, we noticed that there is an order to the median salaries of the categorical variables. 
+During the exploratory data analysis, we noticed that there is an order to the median salaries of the categorical variables. 
 
-Because of that, we are going to to code with the categorical variables with their mean salaries.
+Because of that, we are going to code with the categorical variables with their mean salaries.
 
-Correalation Matrix:
+Correlation Matrix:
 
 After we applied mean encoding to the categorical variables. We see a correlation matrix as follows:
 
